@@ -1,29 +1,16 @@
 package net.fabricmc.dcch.mixin;
 
-import java.util.List;
-
-import org.spongepowered.asm.mixin.Final;
+import net.minecraft.client.gui.hud.ChatHud;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
-import org.spongepowered.asm.mixin.Shadow;
-
-import net.minecraft.client.gui.hud.ChatHud;
-import net.minecraft.client.gui.hud.ChatHudLine;
 
 @Mixin(ChatHud.class)
 public class DCCHMixin {
-	@Shadow
-	private @Final List<String> messageHistory;
-
-	@Shadow
-	private @Final List<ChatHudLine<?>> messages;
-
-	@Shadow
-	private @Final List<ChatHudLine<?>> visibleMessages;
-
+	/**
+	 * @author anar4732
+	 */
 	@Overwrite
 	public void clear(boolean clearHistory) {
-		this.visibleMessages.clear();
-		this.messages.clear();
+		// Do not clear the chat history
 	}
 }
