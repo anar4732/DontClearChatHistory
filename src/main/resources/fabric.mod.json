@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "dcch",
+  "version": "${version}",
+  "name": "DCCH",
+  "description": "Don't clear chet history!",
+  "authors": [
+    "anar4732"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fabricmc.dcch.DCCH"
+    ]
+  },
+  "mixins": [
+    "dcch.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.13.3",
+    "fabric": "*",
+    "minecraft": "1.18.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}

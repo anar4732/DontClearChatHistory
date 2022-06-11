@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.fabricmc.dcch.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "DCCHMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
