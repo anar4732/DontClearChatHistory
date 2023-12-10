@@ -8,6 +8,7 @@
     "anar4732"
   ],
   "license": "All Rights Reserved",
+  "icon": "assets/dcch/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
